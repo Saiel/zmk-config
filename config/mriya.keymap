@@ -15,11 +15,15 @@
 #define ADJ 3
 
 &lt {
-    quick_tap_ms = <200>;
+    quick_tap_ms = <100>;
     flavor = "hold-preferred";
+    tapping-term-ms = <100>;
 };
 
-&mt { quick_tap_ms = <200>; };
+&mt {
+    quick_tap_ms = <100>;
+    tapping-term-ms = <100>;
+};
 
 / {
     macros {
@@ -45,7 +49,7 @@
             bindings = <&mo>, <&tog>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
         };
 
         mt_inst: mt_inst {
